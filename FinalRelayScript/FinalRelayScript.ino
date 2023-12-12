@@ -1,9 +1,11 @@
 int ledPin = 13; // The pin you want to control (changed to pin 13)
-
+//used for testing
 void setup() {
   Serial.begin(9600); // Set the baud rate to match your configuration
+  //Please do not change baudrate
   pinMode(6, OUTPUT);
   digitalWrite(6, LOW);
+  //change based on your relay pin.
 }
 
 void loop() {
@@ -25,3 +27,4 @@ void loop() {
     }
   }
 }
+//Use 52 to stop the wheel and 54 to start it in P5 Serial.control
